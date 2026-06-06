@@ -33,11 +33,7 @@ const config: Config = {
           500: "#d8431f",
           600: "#b3361a",
         },
-        // Gradient accents
-        rose: "#ff2e63",
-        grape: "#9d4edd",
-        amber: "#ff9d3d",
-        // Market signal colors
+        // Market signal colors (used in optional trading widgets)
         up: "#22c55e",
         down: "#ef4444",
       },

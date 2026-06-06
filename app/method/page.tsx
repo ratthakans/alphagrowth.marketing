@@ -68,7 +68,6 @@ export default function MethodPage() {
                 className="h-56 w-full object-cover sm:h-72"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
-              <div className="grid-bg absolute inset-0 opacity-30" />
               <div className="absolute inset-0 flex items-center">
                 <div className="max-w-xl px-8 sm:px-12">
                   <p className="eyebrow">Compound effect</p>

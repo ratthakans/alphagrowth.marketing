@@ -2,22 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Signature forex-creative gradient (sunset → magenta → violet) */
-  --grad: linear-gradient(110deg, #ff9d3d 0%, #eb5939 26%, #ff2e63 58%, #9d4edd 100%);
-  --grad-soft: linear-gradient(110deg, #eb5939 0%, #ff2e63 55%, #9d4edd 100%);
-}
-
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
     @apply bg-ink text-snow-dim antialiased;
-    background-image:
-      radial-gradient(48rem 48rem at 88% -12%, rgba(157, 78, 221, 0.12), transparent 60%),
-      radial-gradient(42rem 42rem at 6% 2%, rgba(235, 89, 57, 0.09), transparent 58%);
-    background-attachment: fixed;
   }
   ::selection {
     @apply bg-flame-400/30 text-snow;
@@ -29,67 +19,38 @@
     @apply mx-auto w-full max-w-container px-5 sm:px-8;
   }
 
-  /* Brand gradient text (static for performance) */
-  .flame-text {
-    background-image: var(--grad);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+  /* Accent text — solid Cinnabar */
+  .flame-text,
   .text-gradient {
-    background-image: var(--grad);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    @apply text-flame-400;
   }
 
-  .bg-grad {
-    background-image: var(--grad);
-  }
+  /* Accent fill — solid Cinnabar */
+  .bg-grad,
   .bg-grad-soft {
-    background-image: var(--grad-soft);
+    @apply bg-flame-400;
   }
 
   .card {
-    @apply rounded-2xl border border-ink-line bg-ink-card/70 backdrop-blur-sm;
+    @apply rounded-2xl border border-ink-line bg-ink-card;
   }
-  /* gradient-ring card */
+  /* Highlighted card — solid Cinnabar border */
   .card-grad {
-    position: relative;
-    border-radius: 1.25rem;
-    background: #181818;
-  }
-  .card-grad::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: var(--grad);
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.55;
-    pointer-events: none;
+    @apply rounded-2xl border border-flame-400/35 bg-ink-card;
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200;
   }
   .btn-flame {
-    @apply btn text-ink shadow-[0_10px_36px_-10px_rgba(255,46,99,0.65)] hover:shadow-[0_14px_50px_-8px_rgba(255,46,99,0.8)] hover:-translate-y-0.5;
-    background-image: var(--grad);
+    @apply btn bg-flame-400 text-ink hover:bg-flame-300;
   }
   .btn-ghost {
-    @apply btn border border-ink-line bg-white/[0.02] text-snow-dim hover:border-flame-400/60 hover:text-snow;
+    @apply btn border border-ink-line bg-transparent text-snow-dim hover:border-flame-400/60 hover:text-snow;
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.3em];
-    background-image: var(--grad);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-flame-400;
   }
 
   .mono {
@@ -99,23 +60,8 @@
     @apply py-20 sm:py-28;
   }
   .hairline {
-    @apply h-px w-full;
-    background-image: linear-gradient(90deg, rgba(235, 89, 57, 0.6), rgba(157, 78, 221, 0.2), transparent);
+    @apply h-px w-full bg-ink-line;
   }
-
-  /* Faint creative grid background */
-  .grid-bg {
-    background-image:
-      linear-gradient(rgba(157, 78, 221, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(235, 89, 57, 0.05) 1px, transparent 1px);
-    background-size: 44px 44px;
-  }
-}
-
-@keyframes grad-move {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 /* Custom scrollbar */

@@ -36,8 +36,6 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden pt-32 sm:pt-40">
-      <div className="grid-bg absolute inset-0 -z-10 opacity-40" />
-      <div className="absolute -right-24 top-0 -z-10 h-80 w-80 rounded-full bg-grad opacity-20 blur-3xl" />
       <div className="container-page pb-12">
         <Reveal>
           <p className="eyebrow">{eyebrow}</p>
@@ -63,9 +61,7 @@ export function CTASection() {
     <section className="section">
       <div className="container-page">
         <Reveal>
-          <div className="card-grad overflow-hidden bg-gradient-to-br from-ink-card to-ink-soft p-10 sm:p-16">
-            <div className="grid-bg absolute inset-0 opacity-30" />
-            <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-grad opacity-25 blur-3xl" />
+          <div className="card-grad overflow-hidden p-10 sm:p-16">
             <div className="relative">
               <p className="eyebrow">Let&apos;s talk</p>
               <h2 className="mt-3 max-w-xl font-display text-3xl font-bold tracking-tight text-snow sm:text-4xl">

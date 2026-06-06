@@ -16,22 +16,11 @@ export default function HomePage() {
     <>
       {/* ───── HERO ───── */}
       <section className="relative overflow-hidden pt-28 sm:pt-36">
-        <div className="grid-bg absolute inset-0 -z-10 opacity-40" />
-        <Parallax speed={0.25} className="absolute -right-40 -top-24 -z-10">
-          <div className="h-[34rem] w-[34rem] rounded-full bg-grad opacity-20 blur-3xl" />
-        </Parallax>
-        <Parallax speed={0.18} className="absolute -left-40 top-40 -z-10">
-          <div className="h-96 w-96 rounded-full bg-grape/10 blur-3xl" />
-        </Parallax>
-
         <div className="container-page grid items-center gap-14 pb-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="animate-fade-up [animation-delay:0ms]">
-              <div className="inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-card/60 px-4 py-1.5 text-xs font-medium text-snow-muted">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose/70" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-grad" />
-                </span>
+              <div className="inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-card px-4 py-1.5 text-xs font-medium text-snow-muted">
+                <span className="h-1.5 w-1.5 rounded-full bg-flame-400" />
                 Creative × Performance Studio · {company.niche}
               </div>
             </div>
