@@ -89,6 +89,58 @@ export const images = {
     alt: "โฟลเดอร์โซเชียลมีเดียบนหน้าจอมือถือ",
     credit: "Nathan Dumlao / Unsplash",
   } as Img,
+
+  // ── Production · Art · Graphic design ──
+  graphicDesign: {
+    src: U("photo-1572044162444-ad60f128bdea"),
+    alt: "นักออกแบบกราฟิกทำงานกับพาเลตต์สี Pantone และดรออิงแท็บเล็ต",
+    credit: "Theme Photos / Unsplash",
+  } as Img,
+  videoEditing: {
+    src: U("photo-1574717024653-61fd2cf4d44d"),
+    alt: "ไทม์ไลน์ตัดต่อวิดีโอสีสันสดใสในงานโปรดักชัน",
+    credit: "Wahid Khene / Unsplash",
+  } as Img,
+  production: {
+    src: U("photo-1485846234645-a62644f84728"),
+    alt: "สเลทถ่ายทำบนกองโปรดักชัน",
+    credit: "Jakob Owens / Unsplash",
+  } as Img,
+  photography: {
+    src: U("photo-1542038784456-1ea8e935640e"),
+    alt: "กล้องถ่ายภาพสำหรับงานครีเอทีฟ",
+    credit: "Christian Wiediger / Unsplash",
+  } as Img,
+  art: {
+    src: U("photo-1513364776144-60967b0f800f"),
+    alt: "พู่กันและสีอะคริลิกโทนส้ม-แดงบนผ้าใบ",
+    credit: "russn_fckr / Unsplash",
+  } as Img,
+  uxSketch: {
+    src: U("photo-1581291518857-4e27b48ff24e"),
+    alt: "สเก็ตช์ดีไซน์ UI ด้วยมือบนกระดาษ",
+    credit: "Kelly Sikkema / Unsplash",
+  } as Img,
+  branding: {
+    src: U("photo-1633533452148-a9657d2c9a5f"),
+    alt: "งานออกแบบแบรนด์และแพ็กเกจจิ้งสีสันสดใส",
+    credit: "Patrik Michalicka / Unsplash",
+  } as Img,
+  studio: {
+    src: U("photo-1606857521015-7f9fcf423740"),
+    alt: "ออฟฟิศสตูดิโอครีเอทีฟเอเจนซี่",
+    credit: "Israel Andrade / Unsplash",
+  } as Img,
+  print: {
+    src: U("photo-1503694978374-8a2fa686963a"),
+    alt: "แท่นพิมพ์งานโปรดักชันสิ่งพิมพ์",
+    credit: "Bank Phrom / Unsplash",
+  } as Img,
+  storyboard: {
+    src: U("photo-1531403009284-440f080d1e12"),
+    alt: "บอร์ดวางสตอรี่และไวร์เฟรมของทีมครีเอทีฟ",
+    credit: "Alvaro Reyes / Unsplash",
+  } as Img,
 };
 
 // For the auto-scrolling gallery band — creative work meets the market.

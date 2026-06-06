@@ -50,8 +50,8 @@ export default function PackagesPage() {
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-ink-line">
               <Image
-                src={images.coins.src}
-                alt={images.coins.alt}
+                src={images.studio.src}
+                alt={images.studio.alt}
                 width={1200}
                 height={420}
                 className="h-44 w-full object-cover sm:h-56"
@@ -67,7 +67,7 @@ export default function PackagesPage() {
                 </div>
               </div>
               <span className="mono absolute bottom-2 right-3 text-[8px] uppercase tracking-wide text-snow/40">
-                {images.coins.credit}
+                {images.studio.credit}
               </span>
             </div>
           </Reveal>

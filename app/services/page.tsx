@@ -5,7 +5,12 @@ import { PageHero, SectionHeading, CTASection } from "@/components/ui";
 import { images } from "@/lib/images";
 import { trustEngine, survivalKit } from "@/lib/content";
 
-const engineImgs = [images.candles, images.terminal, images.mobile, images.desk];
+const engineImgs = [
+  images.graphicDesign,
+  images.branding,
+  images.social,
+  images.production,
+];
 
 export const metadata: Metadata = {
   title: "บริการ — The Engine",

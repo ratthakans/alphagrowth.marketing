@@ -61,8 +61,8 @@ export default function MethodPage() {
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-ink-line">
               <Image
-                src={images.web3.src}
-                alt={images.web3.alt}
+                src={images.videoEditing.src}
+                alt={images.videoEditing.alt}
                 width={1200}
                 height={500}
                 className="h-56 w-full object-cover sm:h-72"
@@ -83,7 +83,7 @@ export default function MethodPage() {
                 </div>
               </div>
               <span className="mono absolute bottom-2 right-3 text-[8px] uppercase tracking-wide text-snow/40">
-                {images.web3.credit}
+                {images.videoEditing.credit}
               </span>
             </div>
           </Reveal>

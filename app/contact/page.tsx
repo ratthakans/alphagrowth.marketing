@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
 
               <Photo
-                img={images.desk}
+                img={images.studio}
                 ratio="aspect-[16/9]"
                 tag="Bangkok · 2026"
               />

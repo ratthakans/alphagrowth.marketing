@@ -171,9 +171,9 @@ export default function HomePage() {
           <Reveal>
             <Tilt max={5}>
               <Photo
-                img={images.bitcoin}
+                img={images.branding}
                 ratio="aspect-[4/3]"
-                tag="Social proof"
+                tag="Brand & social proof"
                 label="ความน่าเชื่อ = เงิน"
               />
             </Tilt>
