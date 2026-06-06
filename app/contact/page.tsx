@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
-import Photo from "@/components/Photo";
 import { PageHero } from "@/components/ui";
-import { images } from "@/lib/images";
 import { company, freeSession, riskWarning } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -74,11 +73,33 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <Photo
-                img={images.studio}
-                ratio="aspect-[16/9]"
-                tag="Bangkok · 2026"
-              />
+              {/* Contact person */}
+              <div className="flex items-center gap-5 rounded-2xl border border-ink-line bg-ink-card/50 p-5">
+                <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-ink-line">
+                  <Image
+                    src="/team/pleum.jpg"
+                    alt={`${company.contactName} — ${company.contactRole}`}
+                    fill
+                    sizes="96px"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[11px] font-semibold uppercase tracking-wider text-flame-400">
+                    คุยกับทีมโดยตรง
+                  </div>
+                  <div className="mt-1 font-display text-xl font-bold text-snow">
+                    {company.contactName}
+                  </div>
+                  <div className="text-xs text-snow-faint">{company.contactRole}</div>
+                  <a
+                    href={`tel:${company.phone}`}
+                    className="mono mt-2 inline-flex items-center gap-2 text-sm font-semibold text-snow transition-colors hover:text-flame-300"
+                  >
+                    📞 {company.phoneDisplay}
+                  </a>
+                </div>
+              </div>
             </div>
           </Reveal>
 

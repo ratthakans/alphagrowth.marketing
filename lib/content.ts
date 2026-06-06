@@ -8,6 +8,10 @@ export const company = {
   web: "alphagrowth.marketing",
   email: "hello@alphagrowth.marketing",
   line: "@alphagrowthmkt",
+  phone: "0655169925",
+  phoneDisplay: "065-516-9925",
+  contactName: "ปลื้ม",
+  contactRole: "Strategy & Partnerships",
   hours: "MON–FRI 10:00–18:00",
   issue: "2026 · 01",
 };

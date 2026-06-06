@@ -48,6 +48,14 @@ export default function Footer() {
                   {company.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={`tel:${company.phone}`}
+                  className="transition-colors hover:text-flame-200"
+                >
+                  {company.contactName} · {company.phoneDisplay}
+                </a>
+              </li>
               <li>LINE · Telegram {company.line}</li>
               <li>{company.web}</li>
               <li className="text-snow-faint">{company.hours}</li>
