@@ -24,7 +24,8 @@ export default function BeforeAfter({ img }: { img: Img }) {
       onMouseMove={(e) => dragging.current && move(e.clientX)}
       onMouseUp={() => (dragging.current = false)}
       onMouseLeave={() => (dragging.current = false)}
-      onTouchMove={(e) => move(e.touches[0].clientX)}
+      onTouchMove={(e) => dragging.current && move(e.touches[0].clientX)}
+      onTouchEnd={() => (dragging.current = false)}
     >
       {/* AFTER — our creative (vibrant) */}
       <div className="absolute inset-0">

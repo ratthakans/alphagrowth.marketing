@@ -10,10 +10,19 @@ export default function StickyCTA() {
   const [closed, setClosed] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setShow(window.scrollY > 900);
+    const onScroll = () => {
+      const y = window.scrollY;
+      const docH = document.documentElement.scrollHeight;
+      const nearBottom = y + window.innerHeight > docH - 560;
+      setShow(y > 700 && !nearBottom);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   // hide on the contact page (already a big CTA) and once dismissed
