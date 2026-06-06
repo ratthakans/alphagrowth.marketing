@@ -27,11 +27,12 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://alphagrowth.marketing"),
   title: {
-    default: "Alpha Growth Marketing — Creative Marketing Agency สายเทรดทอง XAU/USD",
+    default:
+      "Alpha Growth Marketing — เอเจนซี่การตลาดเฉพาะทางสาย Forex (ไม่ใช่โบรกเกอร์/IB)",
     template: "%s · Alpha Growth Marketing",
   },
   description:
-    "Creative + Performance Agency ที่เข้าใจสายเทรดทอง XAU/USD · Forex · Prop Firm เปลี่ยน Ad Spend เป็น FTD จริง — Bangkok 2026",
+    "เอเจนซี่การตลาดที่เชี่ยวชาญตลาด Forex โดยเฉพาะ — ลูกค้าคือ Broker · IB · Academy · Prop Firm · Exchange. เปลี่ยน Ad Spend เป็น FTD จริง. เราไม่ใช่โบรกเกอร์/IB และไม่ให้คำแนะนำการลงทุน — Bangkok 2026",
   keywords: [
     "XAU/USD marketing",
     "forex agency",

@@ -9,7 +9,7 @@ import ResultsBand from "@/components/ResultsBand";
 import FAQ from "@/components/FAQ";
 import { SectionHeading, CTASection } from "@/components/ui";
 import { images } from "@/lib/images";
-import { company, problems, packages, trustEngine } from "@/lib/content";
+import { problems, packages, trustEngine } from "@/lib/content";
 
 export default function HomePage() {
   return (
@@ -21,7 +21,7 @@ export default function HomePage() {
             <div className="animate-fade-up [animation-delay:0ms]">
               <div className="inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-card px-4 py-1.5 text-xs font-medium text-snow-muted">
                 <span className="h-1.5 w-1.5 rounded-full bg-flame-400" />
-                Creative × Performance Studio · {company.niche}
+                Forex-Specialist Marketing Agency · Bangkok
               </div>
             </div>
 
@@ -32,8 +32,8 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-7 max-w-xl animate-fade-up text-lg leading-relaxed text-snow-muted [animation-delay:260ms]">
-              เอเจนซี่ครีเอทีฟที่พูดภาษาเทรดทอง XAU/USD รู้เรื่อง —
-              เปลี่ยนกลยุทธ์ คอนเทนต์ และยิงแอด ให้กลายเป็น{" "}
+              เราคือ<strong className="text-snow">เอเจนซี่การตลาดที่เชี่ยวชาญตลาด Forex โดยเฉพาะ</strong>{" "}
+              — เปลี่ยนกลยุทธ์ คอนเทนต์ และยิงแอด ให้ธุรกิจสายเทรดได้{" "}
               <strong className="text-snow">ยอดฝากจริง (FTD)</strong>{" "}
               ไม่ใช่แค่ทำสวยหรือ boost โพสต์
             </p>

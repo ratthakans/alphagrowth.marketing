@@ -413,7 +413,34 @@ export const finePrint = [
 export const riskWarning =
   "การเทรด XAU/USD และผลิตภัณฑ์ที่มี Leverage มีความเสี่ยงสูง อาจสูญเสียเงินลงทุนทั้งหมด · คอนเทนต์ทั้งหมดจัดทำเพื่อการตลาด ไม่ใช่คำแนะนำการลงทุน · ลูกค้าเป็นผู้รับผิดชอบการกำกับดูแลและใบอนุญาตของผลิตภัณฑ์ตนเอง";
 
-// ── SOCIAL PROOF — platforms & broker types we work across ──────
+// ── POSITIONING — who we are / who we serve ─────────────────────
+export const notUs = [
+  "ไม่ใช่โบรกเกอร์ · ไม่รับฝากเงิน",
+  "ไม่ใช่ IB / Academy",
+  "ไม่ใช่ห้องซิกแนล / ที่ปรึกษาการลงทุน",
+];
+
+// Clients we do marketing FOR.
+export const clients = [
+  "Broker",
+  "IB",
+  "Academy",
+  "Prop Firm",
+  "Exchange",
+  "Master Trader",
+];
+
+// Ad/content platforms we run on.
+export const adPlatforms = [
+  "Meta",
+  "TikTok",
+  "LINE",
+  "Telegram",
+  "Google",
+  "YouTube",
+];
+
+// (kept for reference / optional widgets)
 export const platforms = [
   "Meta Ads",
   "TikTok Ads",
@@ -467,6 +494,10 @@ export const results = [
 
 // ── FAQ ─────────────────────────────────────────────────────────
 export const faqs = [
+  {
+    q: "Alpha Growth เป็นโบรกเกอร์ / IB / Academy หรือเปล่า?",
+    a: "ไม่ใช่ — เราเป็นเอเจนซี่การตลาดที่เชี่ยวชาญตลาด Forex โดยเฉพาะ ลูกค้าของเราคือโบรกเกอร์ / IB / Academy / Prop Firm / Exchange ที่จ้างเราทำการตลาดให้ · เราไม่รับฝากเงิน ไม่บริหารพอร์ต และไม่ให้คำแนะนำการลงทุน — หน้าที่เราคือทำให้แบรนด์ของคุณได้ยอดฝากจริง (FTD)",
+  },
   {
     q: "แอดโดนแบนบ่อย จัดการยังไง?",
     a: "เราใช้ Safe-Zone Copywriting เขียน payout-proof ให้ผ่านนโยบาย Meta/TikTok ตั้งแต่แรก + เตรียมเพจ/บัญชีสำรองวอร์มไว้ (Ad-Ban Resilience) ถ้าโดนแบนจาก copy ของเรา เรารับผิดชอบช่วย appeal และกู้คืนให้แคมเปญรันต่อ",
